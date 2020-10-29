@@ -3,13 +3,13 @@ import os
 
 class Config((object)):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1150493965:AAEgMHlfg214DBXKoY1P-SRnE405sjOc0tM")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("bc41aa449da2915663891af333172241")
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = {int(x) for x in os.environ.get("AUTH_CHANNEL", "").split()}
+    AUTH_CHANNEL = {int(x) for x in os.environ.get("-1001378353259", "").split()}
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -42,5 +42,5 @@ class Config((object)):
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
     RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
     DESTINATION_FOLDER = os.environ.get(
-        "DESTINATION_FOLDER", "TorrentLeech-Gdrive")
-    INDEX_LINK = os.environ.get("INDEX_LINK", "")
+        "DESTINATION_FOLDER", "https://drive.google.com/drive/folders/1OVzEYRD1kQQ53lMjzE3mfYjkzitxZb-N")
+    INDEX_LINK = os.environ.get("INDEX_LINK", "www.kausarcloud1.workers.dev")
